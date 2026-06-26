@@ -105,3 +105,23 @@ Raw input (bug report / message)
 | `utils.py` | JSON parsing with retry, pretty-printing, file saving |
 | `.env` | API key (you create this) |
 | `runs/` | Output files from each run |
+
+## Project Status & Results
+
+This project successfully runs the full three-stage prompt pipeline and produces structured outputs for three sample support tickets.
+
+### Generated Output Files
+- [runs/run1_normal.txt](runs/run1_normal.txt) — clear bug report input
+- [runs/run2_tricky.txt](runs/run2_tricky.txt) — vague and emotional customer message
+- [runs/run3_broken.txt](runs/run3_broken.txt) — broken or gibberish input
+
+### What the pipeline does
+1. Extracts structured bug report details from raw input.
+2. Performs root cause reasoning and triage prioritization.
+3. Produces an engineering report, developer handoff, and customer reply.
+
+### How to view the results
+Open the files in the [runs](runs) folder to inspect the generated outputs for each test case.
+
+### Demo Summary
+This project demonstrates how well-engineered prompts can be chained together to create a simple agent-like workflow for support ticket triage without requiring any complex tooling.
