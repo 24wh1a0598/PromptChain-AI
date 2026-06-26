@@ -1,0 +1,18 @@
+=== run2_tricky ===
+
+INPUT:
+URGENT!!! Your app is AWFUL it's been BROKEN for over a week now and I can't get ANY work done!! This is costing me money!! Fix it NOW or I'm switching to your competitor!!! — signed, a VERY frustrated customer
+
+--- Stage 1: Understand (Senior QA Engineer) ---
+  Output:
+{'customer_name': 'Unknown', 'product': 'Unknown', 'version': 'N/A', 'issue_summary': 'The app has been broken for over a week.', 'severity': 'critical', 'environment': 'N/A', 'steps_to_reproduce': 'Not provided', 'days_open': 7}
+
+--- Stage 2: Reason (Staff Software Engineer) ---
+  Output:
+{'root_cause': 'The app is likely experiencing a critical failure due to a backend API issue or configuration problem.', 'affected_component': 'unknown', 'priority': 'P0', 'suggested_timeline': 'within 4 hours', 'reasoning': "The issue summary indicates that the app is broken, which suggests that the core functionality of the application is affected. Since no specific component is mentioned, it is difficult to pinpoint the exact area, but it likely involves either the frontend or backend. The severity is marked as critical, and the issue has been open for 7 days, indicating that it is urgent and needs immediate attention. Given the lack of specific details, the root cause could be a backend API failure or a configuration issue that is affecting the overall functionality of the app. The fix should target the core application logic, which could involve both frontend and backend components, but without more information, it is hard to specify further. Given the critical nature of the issue and the fact that it has been open for a week, the triage priority should be P0, and the suggested timeline for resolution should be 'within 4 hours' to minimize impact on users."}
+
+--- Stage 3: Produce (Technical Support Lead) ---
+  Output:
+{'engineering_report': 'The application is currently experiencing a critical failure likely due to a backend API issue or a configuration problem. This has resulted in a complete breakdown of core functionality, which has persisted for over a week. Immediate attention is required to identify and resolve the underlying cause to restore service and minimize user impact.', 'developer_handoff': ['Investigate backend API for potential failures or misconfigurations.', 'Check application logs for error messages related to API calls.', 'Assess frontend interactions with the backend to identify any dependencies.', 'Prioritize resolution within 4 hours due to critical severity.'], 'customer_reply': 'We understand that the app has been down for over a week, and we sincerely apologize for the inconvenience this has caused. Our team is actively investigating the issue to restore functionality as quickly as possible. Thank you for your patience during this time.'}
+
+=== END ===

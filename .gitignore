@@ -4,6 +4,3 @@ __pycache__/
 
 # Environment files
 .env
-
-# Local run outputs
-runs/

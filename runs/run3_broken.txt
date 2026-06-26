@@ -1,0 +1,18 @@
+=== run3_broken ===
+
+INPUT:
+xylophone 42 banana 🍌🍌🍌 kjhfsdkjfhsd fhdsjfhdskjfhdskj lorem ipsum dolor sit amet !!!???
+
+--- Stage 1: Understand (Senior QA Engineer) ---
+  Output:
+{'customer_name': 'Unknown', 'product': 'Unknown', 'version': 'N/A', 'issue_summary': 'Unknown', 'severity': 'unknown', 'environment': 'N/A', 'steps_to_reproduce': 'Not provided', 'days_open': -1}
+
+--- Stage 2: Reason (Staff Software Engineer) ---
+  Output:
+{'root_cause': 'Insufficient information to determine the underlying cause.', 'affected_component': 'unknown', 'priority': 'P3', 'suggested_timeline': 'next sprint', 'reasoning': 'The issue summary is completely unknown, making it difficult to determine which component might be affected. The severity is also unknown, and the days open is -1, indicating an invalid state. Without details, I cannot estimate the root cause or determine the area of the codebase to target for a fix. Therefore, I assign a low priority and suggest review or closure in the next sprint.'}
+
+--- Stage 3: Produce (Technical Support Lead) ---
+  Output:
+{'engineering_report': 'The bug report lacks essential information, including the customer, product, version, and severity. This absence of details prevents us from identifying the affected component or estimating the root cause. Given the invalid state of the report, we recommend reviewing or closing this issue in the next sprint.', 'developer_handoff': '- Review the bug report for any additional context or details.\n- Consider reaching out to the customer for more information if possible.\n- Prepare to close the issue if no further information is provided by the next sprint.', 'customer_reply': 'Thank you for your patience. We are currently reviewing your report, but we need more details to proceed effectively. Please provide any additional information you may have, and we will do our best to assist you.'}
+
+=== END ===
